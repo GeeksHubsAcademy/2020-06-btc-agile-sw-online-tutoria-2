@@ -40,4 +40,13 @@ describe('Testing', function (){
         expect(result).toBe(expected);
     });
 
+    test('Testeo números multiples de 3 y 5 para hacer Buzz',function() {
+        //Arrange
+        var expected = "1\n2\nFizz\n4\nBuzz\nFizz\n7\n8\nFizz\nBuzz\n11\nFizz\n13\n14\nFizzBuzz\n";
+        //Act
+        var result = fizzbuzz(15);
+        //Assert
+        expect(result).toBe(expected);
+    });
+
 });

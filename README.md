@@ -11,11 +11,17 @@ ts-jest       https://github.com/kulshekhar/ts-jest
 
 Command line
 ```
+npm install -g typescript
 npm install --save-dev jest
 npm i @types/jest
 
 Prerequisites       npm i -D jest typescript	
 Installing          npm i -D ts-jest @types/jest	
 Creating config     npx ts-jest config:init	
-Running tests	    npx jest	
+
+Compile all         tsc
+Compile file        tsc '{path}/foo.ts'
+Run file            npx node '{path}/foo.ts'
+Compile/Run (fly)   npx ts-node '{path}/foo.ts'
+Running tests       npx jest	
 ```

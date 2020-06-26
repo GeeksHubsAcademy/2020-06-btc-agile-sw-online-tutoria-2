@@ -7,16 +7,18 @@ const SALTO_LINEA = "\n";
 export function fizzBuzz(it: number) :string {
     var res = "";
     for (var i = 1; i <= it; i++) {
+        // modulo 3 y 5
+        if ((i % 3 === 0) && (i % 5 === 0)) {
+            res += "FizzBuzz"+SALTO_LINEA;
+        }
         // modulo 3
-        if (i % 3 === 0) {
+        else if (i % 3 === 0) {
             res += "Fizz"+SALTO_LINEA;
         }
         // modulo 5
         else if (i % 5 === 0) {
             res += "Buzz"+SALTO_LINEA;
         }
-        // modulo 3 y 5
-
         // caso base
         else {
             res += i + SALTO_LINEA;

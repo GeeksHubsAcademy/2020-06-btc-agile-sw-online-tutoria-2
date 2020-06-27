@@ -3,24 +3,24 @@ export function _method(value: number) :string {
 }
 
 const SALTO_LINEA = "\n";
+const FIZZ = "Fizz";
+const BUZZ = "Buzz";
+const FIZZBUZZ = FIZZ+BUZZ;
+const ZERO = 0;
+const TRES = 3;
+const CINCO = 5;
+const CADENA_VACIA = "";
 
 export function fizzBuzz(it: number) :string {
-    var res = "";
+    var res = CADENA_VACIA;
     for (var i = 1; i <= it; i++) {
-        // modulo 3 y 5
-        if ((i % 3 === 0) && (i % 5 === 0)) {
-            res += "FizzBuzz"+SALTO_LINEA;
-        }
-        // modulo 3
-        else if (i % 3 === 0) {
-            res += "Fizz"+SALTO_LINEA;
-        }
-        // modulo 5
-        else if (i % 5 === 0) {
-            res += "Buzz"+SALTO_LINEA;
-        }
-        // caso base
-        else {
+        if ((i % TRES === ZERO) && (i % CINCO === ZERO)) {
+            res += FIZZBUZZ + SALTO_LINEA;
+        } else if (i % TRES === ZERO) {
+            res += FIZZ + SALTO_LINEA;
+        } else if (i % CINCO === ZERO) {
+            res += BUZZ + SALTO_LINEA;
+        } else {
             res += i + SALTO_LINEA;
         }
     }

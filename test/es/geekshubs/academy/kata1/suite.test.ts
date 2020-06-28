@@ -1,35 +1,24 @@
-import { _method } from "../../../../../src/es/geekshubs/academy/kata1/geekshubs";
 import { fizzbuzz } from "../../../../../src/es/geekshubs/academy/kata1/geekshubs";
 
 describe('Testing', function (){
 
-    test('Tittle - cmp string ', function () {
-        //Arrange
-        var expected = "vicboma1";
-        //Act
-        var result = _method(1);
-        //Assert
-        expect(result).toBe(expected);
-    });
-
-    test('Testeo números primeros',function() {
+    test('Testeo números primeros', function () {
         //Arrange
         var expected = "1\n2\n";
         //Act
-        var result = fizzbuzz(2);
+        var result = fizzBuzz(2);
         //Assert
         expect(result).toBe(expected);
     });
 
-    test('Testeo números multiples de 3 para hacer Fizz',function() {
+    test('Testeo números múltiplos de 3 para hacer Fizz', function () {
         //Arrange
-        var expected = "1\n2\nFizz\n";
+        var expected = "1\n2\n\Fizz\n";
         //Act
-        var result = fizzbuzz(3);
+        var result = fizzBuzz(3);
         //Assert
         expect(result).toBe(expected);
     });
-
     
     test('Testeo números multiples de 5 para hacer Buzz',function() {
         //Arrange
@@ -59,3 +48,4 @@ describe('Testing', function (){
     });
 
 });
+
